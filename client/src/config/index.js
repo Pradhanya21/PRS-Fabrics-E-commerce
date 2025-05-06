@@ -58,25 +58,32 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
-      { id: "footwear", label: "Footwear" },
+      { id: "men-shirtings", label: "Men Shirtings" },
+      { id: "men-shootings", label: "Men Shootings" },
+      { id: "men-dhotis", label: "Men Dhotis" },
+      { id: "women-saree", label: "Women Saree" },
+      { id: "women-blouse-bit", label: "Women Blouse Bit" },
+      { id: "women-linings", label: "Women Linings" },
+      { id: "women-saree-falls", label: "Women Saree Falls" },
+      { id: "kids", label: "Towel" },
+      { id: "accessories", label: "Bedsheets" },
+      
     ],
   },
+
   {
     label: "Brand",
     name: "brand",
     componentType: "select",
     options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
-      { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
-    ],
+      { id: "sivaraj", label: "Sivaraj Spinning Mills" },
+      { id: "kalyani", label: "Sri Kalyani Clothing Company" },
+      { id: "venkatachalapathy", label: "Venkatachalapathy Textiles" },
+      { id: "kandaa", label: "Salem Kandaa Textile Mills" },
+      { id: "sankari", label: "Sankari Textiles" },
+      { id: "nithya", label: "Nithya Fabrics" },
+    ]
+
   },
   {
     label: "Price",
@@ -107,36 +114,14 @@ export const shoppingViewHeaderMenuItems = [
     label: "Home",
     path: "/shop/home",
   },
+
   {
     id: "products",
     label: "Products",
     path: "/shop/listing",
   },
-  {
-    id: "men",
-    label: "Men",
-    path: "/shop/listing",
-  },
-  {
-    id: "women",
-    label: "Women",
-    path: "/shop/listing",
-  },
-  {
-    id: "kids",
-    label: "Kids",
-    path: "/shop/listing",
-  },
-  {
-    id: "footwear",
-    label: "Footwear",
-    path: "/shop/listing",
-  },
-  {
-    id: "accessories",
-    label: "Accessories",
-    path: "/shop/listing",
-  },
+  
+
   {
     id: "search",
     label: "Search",
@@ -144,39 +129,53 @@ export const shoppingViewHeaderMenuItems = [
   },
 ];
 
+
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  "men-shirtings": "Men Shirtings",
+  "men-shootings": "Men Shootings",
+  "men-dhotis": "Men Dhotis",
+  "women-saree": "Women Saree",
+  "women-blouse-bit": "Women Blouse Bit",
+  "women-linings": "Women Linings",
+  "women-saree-falls": "Women Saree Falls",
+  "towel": "Towel",
+  "bedsheets": "Bedsheets",
 };
 
+
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
-  zara: "Zara",
-  "h&m": "H&M",
+  sivaraj: "Sivaraj Spinning Mills",
+  kalyani: "Sri Kalyani Clothing Company",
+  venkatachalapathy: "Venkatachalapathy Textiles",
+  kandaa: "Salem Kandaa Textile Mills",
+  sankari: "Sankari Textiles",
+  nithya: "Nithya Fabrics",
 };
+
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "men-shirtings", label: "Men Shirtings" },
+    { id: "men-shootings", label: "Men Shootings" },
+    { id: "men-dhotis", label: "Men Dhotis" },
+    { id: "women-saree", label: "Women Saree" },
+    { id: "women-blouse-bit", label: "Women Blouse Bit" },
+    { id: "women-linings", label: "Women Linings" },
+    { id: "women-saree-falls", label: "Women Saree Falls" },
+    { id: "towel", label: "Towel" },
+    { id: "bedsheets", label: "Bedsheets" }
   ],
+
+
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
-    { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
-  ],
+    { id: "sivaraj", label: "Sivaraj Spinning Mills" },
+    { id: "kalyani", label: "Sri Kalyani Clothing Company" },
+    { id: "venkatachalapathy", label: "Venkatachalapathy Textiles" },
+    { id: "kandaa", label: "Salem Kandaa Textile Mills" },
+    { id: "sankari", label: "Sankari Textiles" },
+    { id: "nithya", label: "Nithya Fabrics" },
+  ]
+
 };
 
 export const sortOptions = [
