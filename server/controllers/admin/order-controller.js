@@ -79,8 +79,36 @@ const updateOrderStatus = async (req, res) => {
   }
 };
 
+const getSalesAnalytics = async (req, res) => {
+  try {
+    const [analytics, monthlyData] = await Promise.all([
+      Order.getSalesAnalytics(),
+      Order.getMonthlySales(),
+    ]);
+
+    res.status(200).json({
+      success: true,
+      data: {
+        ...analytics[0],
+        monthlyData: monthlyData.map(month => ({
+          month: month._id,
+          sales: month.totalSales,
+          orders: month.count,
+        })),
+      },
+    });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch analytics",
+    });
+  }
+};
+
 module.exports = {
   getAllOrdersOfAllUsers,
   getOrderDetailsForAdmin,
   updateOrderStatus,
+  getSalesAnalytics
 };
